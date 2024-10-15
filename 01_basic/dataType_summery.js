@@ -31,3 +31,23 @@ const myfunction = function(){
 console.log(typeof myObj)
 // JavaScript is a dynamically typed language.
 // Because data type will automatically assigned at the time of compilation or code execution.
+
+
+
+// *******Memory***************
+// Heap(Non primitive) , Stack (Primitive type)
+
+let myname = "lokendra"
+let newName = myname
+newName ="get new name"
+console.log(myname);
+console.log(newName);
+
+let useOne={
+    name:"lokendra",
+    upi:'abc@yml'
+}
+let userTwo =useOne
+userTwo.upi = "www@ttt"
+console.log(useOne.upi)
+console.log(userTwo.upi)
